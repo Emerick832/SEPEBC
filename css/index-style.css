@@ -1,0 +1,54 @@
+/*index.php style*/
+
+#background-color {
+	background-color: lightgrey;
+}
+
+#topo {
+	margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-titulo {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+#corpo {
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.txt1 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.txt2 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.txt3 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+#rodape {
+	display: flex;
+	margin-top: 15%;
+	text-align: center;
+	justify-content: space-around;
+}

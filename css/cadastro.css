@@ -1,0 +1,69 @@
+/*index.php style*/
+
+#background-color {
+    background-color: lightgrey;
+}
+
+#topo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-titulo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#corpo {
+    /*margin-top: 15%;*/
+    height: auto;
+    justify-content: center;
+}
+
+.txt3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#rodape {
+    display: flex;
+    margin-top: 15%;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.form-cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pagina {
+    background-color: lightgrey;
+}
+
+#formulario {
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    margin-top: 2%;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.titulo {
+    margin-top: 5%;
+    padding-top: 3%;
+    font-size: 18px;
+    text-align: center;
+}

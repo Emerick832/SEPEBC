@@ -1,0 +1,171 @@
+#background-color{
+	background-color: #E6E6FA;
+}
+
+.caixa-fantasma{
+	width: 10%; 
+	height: 50px; 
+	/*border: 1px solid black;*/
+}
+
+#topo{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-left: 50px;
+	align-items: center;
+
+}
+
+#topo span{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#barra-menu .box{
+	width: 16%;
+	height: 40px;
+	border:1px solid grey;
+	border-radius: 18px;
+	text-align: center;
+	margin-left: 10px;
+	padding-top: 3px;
+	background-color: lightblue;
+}
+
+#barra-menu .box:hover{
+	transition: 1.5s;
+	background-color: #CECEF6;
+}
+
+#barra-menu{
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 17%;
+}
+
+#barra-lateral-esquerda{
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	margin-top: 80px;
+	/*border: 1px solid black;*/
+
+}
+
+#corpo{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 90%;
+
+}
+
+.titulo-servico{
+	width: 250px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	border: 1px solid darkgrey;
+	text-align: center;
+	border-radius: 15px;
+	padding-top: 10px;
+	margin-top: 2%;
+	margin-bottom: 10px;
+}
+
+.input-esquerdo{
+	border-radius: 5px;
+	border: 1px solid darkgrey;
+	margin-bottom: 5px;
+	margin-left: 8px;
+	height: 30px;
+
+}
+
+.botao-esquerdo{
+	border-radius: 5px;
+	height: 30px;
+}
+
+
+
+#carteirinha{
+	width: 370px;
+	height: 230px;
+	margin-left: 80px;
+	border:1px solid lightgrey;
+	border-radius: 15px;
+	background-color:  #e6e6e6;
+	float:left;
+}
+
+#titulo-carteirinha{
+	width: auto;
+	height: 20px;
+	margin-top: 80px;
+}
+
+#titulo-carteirinha span{
+	margin-left:60px;
+}
+
+#carteirinha img{
+	width: 105px;
+	height: 105px;
+	float: left;
+}
+
+.imagem img{
+	/*border:solid 1px black;*/
+	padding-top: 50px;
+	padding-left: 3px;
+}
+
+.dados-carteirinha{
+	font-size: 14px;
+	padding-left: 20px;
+	padding-top: 50px;
+	width: 120px;
+	height: 120px;
+	/*border: 1px solid orange;*/
+	float: left;
+}
+
+#flex{
+	padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+}
+
+.dados-carteirinha span{
+	font-weight: bold;
+}
+
+#logos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center; 
+}
+
+.div-flex{
+	width: 550px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+
+.rodape-img{
+	height: 80px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+
