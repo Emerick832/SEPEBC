@@ -24,22 +24,22 @@
 
 	<section id="formulario">
 
-		<form action="">
+	<form action="#" method="post">
 			<h1 class="titulo">Pessoa Física</h1>
 			<br><br>
-			<input type="text" class="input" name="" placeholder="  CPF"><br>
-			<input type="text" class="input" name="" placeholder="  Nome"><br>
-			<input type="text" class="input" name="" placeholder="  RG"><br>
-			<input type="text" class="input" name="" placeholder="  SSP"><br>
-			<input type="text" class="input" name="" placeholder="  Sexo"><br>
-			<input type="text" class="input" name="" placeholder="  Data Nascimento"><br>
-			<input type="text" class="input" name="" placeholder="  E-Mail"><br>
-			<input type="text" class="input" name="" placeholder="  Endereço"><br>
-			<input type="text" class="input" name="" placeholder="  Classificação Profissional"><br>
-			<input type="text" class="input" name="" placeholder="  Supervisor Técnico"><br>
-			<input type="text" class="input" name="" placeholder="  Data do Cadastro"><br>
-			<input type="text" class="input" name="" placeholder="  Celular"><br>
-			<input type="text" class="input" name="" placeholder="  Sigla UF"><br><br>
+			<input type="text" class="input" name="cpf" placeholder="  CPF"><br>
+			<input type="text" class="input" name="nome" placeholder="  Nome"><br>
+			<input type="text" class="input" name="rg" placeholder="  RG"><br>
+			<input type="text" class="input" name="ssp" placeholder="  SSP"><br>
+			<input type="text" class="input" name="sexo" placeholder="  Sexo"><br>
+			<input type="text" class="input" name="dataNascimento" placeholder="  Data Nascimento"><br>
+			<input type="text" class="input" name="email" placeholder="  E-Mail"><br>
+			<input type="text" class="input" name="endereco" placeholder="  Endereço"><br>
+			<input type="text" class="input" name="classificacaoProfissional" placeholder="  Classificação Profissional"><br>
+			<input type="text" class="input" name="supervisorTecnico" placeholder="  Supervisor Técnico"><br>
+			<input type="text" class="input" name="dataDoCadastro" placeholder="  Data do Cadastro"><br>
+			<input type="text" class="input" name="celular" placeholder="  Celular"><br>
+			<input type="text" class="input" name="uf" placeholder="  Sigla UF"><br><br>
 			<input type="submit" value="Enviar"><br>
 		</form>
 
