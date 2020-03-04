@@ -24,7 +24,7 @@
 
 	<section id="formulario">
 
-	<form action="#" method="post">
+	<form action="classes/inserir-pessoaFisica.php" method="post">
 			<h1 class="titulo">Pessoa Física</h1>
 			<br><br>
 			<input type="text" class="input" name="cpf" placeholder="  CPF"><br>
@@ -39,24 +39,9 @@
 			<input type="text" class="input" name="supervisorTecnico" placeholder="  Supervisor Técnico"><br>
 			<input type="text" class="input" name="dataDoCadastro" placeholder="  Data do Cadastro"><br>
 			<input type="text" class="input" name="celular" placeholder="  Celular"><br>
-			<input type="text" class="input" name="uf" placeholder="  Sigla UF"><br><br>
-			<input type="submit" value="Enviar"><br>
-		</form>
-
-		<form action="">
-			<h1 class="titulo">Pessoa Jurídica</h1>
-			<br><br>
-			<input type="text" name="" class="input" placeholder="  CNPJ"><br>
-			<input type="text" name="" class="input" placeholder="  Empresa"><br>
-			<input type="text" name="" class="input" placeholder="  Diretor"><br>
-			<input type="text" name="" class="input" placeholder="  Telefone"><br>
-			<input type="text" name="" class="input" placeholder="  Celular"><br>
-			<input type="text" name="" class="input" placeholder="  E-Mail"><br>
-			<input type="text" name="" class="input" placeholder="  Supervisor Técnico"><br>
-			<input type="text" name="" class="input" placeholder="  Registro CBMDF"><br>
-			<input type="text" name="" class="input" placeholder="  Validade"><br><br>
-			<input type="submit" value="Enviar"><br>
-		</form>
+			<input type="text" class="input" name="SSP_Sigla_UF" placeholder="  Sigla UF"><br><br>
+			<input type="submit" value="Salvar"><br>
+	
 
 	</section>
 
