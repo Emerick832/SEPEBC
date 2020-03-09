@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `sepebc`.`PessoaJuridica` (
   `supervisorTecnico` VARCHAR(45) NOT NULL,
   `registroCBMDF` VARCHAR(45) NOT NULL,
   `validade` DATE NOT NULL,
-  PRIMARY KEY (`cnpj`))
+  PRIMARY KEY (`cnpj`, `supervisorTecnico`))
 ENGINE = InnoDB;
 
 
@@ -53,21 +53,21 @@ CREATE TABLE IF NOT EXISTS `sepebc`.`PessoaFisica` (
   `e-mail` VARCHAR(45) NOT NULL,
   `endereço` VARCHAR(45) NOT NULL,
   `classificaçãoProfissional` VARCHAR(45) NOT NULL COMMENT 'Básico: Combatente\nLíder: Chefe de Brigada\nMestre: Supervisor',
-  `SupervisorTecnico` VARCHAR(45) NOT NULL,
+  `supervisorTecnico` VARCHAR(45) NOT NULL,
   `datadocadastro` DATE NOT NULL,
   `celular` INT(11) NOT NULL,
   `SSP_Sigla_UF` VARCHAR(2) NOT NULL,
   PRIMARY KEY (`cpf`),
-  INDEX `fk_PessoaFisica_PessoaJuridica_idx` (`SupervisorTecnico` ASC),
-  INDEX `fk_PessoaFisica_SSP1_idx` (`SSP_Sigla_UF` ASC) ,
+  INDEX `fk_PessoaFisica_PessoaJuridica_idx` (`supervisorTecnico`),
+  INDEX `fk_PessoaFisica_SSP1_idx` (`SSP_Sigla_UF`) ,
   CONSTRAINT `fk_PessoaFisica_PessoaJuridica`
-    FOREIGN KEY (`SupervisorTecnico`)
-    REFERENCES `pessoafisica`.`PessoaJuridica` (`cnpj`)
+    FOREIGN KEY (`supervisorTecnico`)
+    REFERENCES `PessoaFisica`.`PessoaJuridica` (`supervisorTecnico`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_PessoaFisica_SSP1`
     FOREIGN KEY (`SSP_Sigla_UF`)
-    REFERENCES `pessoafisica`.`SSP` (`Sigla_UF`)
+    REFERENCES `PessoaFisica`.`SSP` (`Sigla_UF`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
