@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `sepebc`.`PessoaFisica` (
   `datadocadastro` DATE NOT NULL,
   `celular` INT(11) NOT NULL,
   `SSP_Sigla_UF` VARCHAR(2) NOT NULL,
-  PRIMARY KEY (`cpf`),
+  PRIMARY KEY (`cpf`, `supervisorTecnico`),
   INDEX `fk_PessoaFisica_PessoaJuridica_idx` (`supervisorTecnico`),
   INDEX `fk_PessoaFisica_SSP1_idx` (`SSP_Sigla_UF`) ,
   CONSTRAINT `fk_PessoaFisica_PessoaJuridica`
