@@ -4,13 +4,22 @@ class Conexao
 {
     public static function pegarConexao()
     {
-        $drive = 'mysql';
-        $hostname = '127.0.0.1';
-        $username = 'root';
-        $password = '';
-        $database = 'sepebc';
-        $conexao = new PDO($drive . ':host=' . $hostname . ';dbname=' . $database, $username, $password);
-        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $conexao;
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+
+        try {
+            $conn = new PDO("mysql:host=$servername;dbname=sepebc", $username, $password);
+            // set the PDO error mode to exception
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected successfully";
+            }
+        catch(PDOException $e)
+            {
+            echo "Connection failed: " . $e->getMessage();
+            }
+
+
     }
+    
 }

@@ -24,7 +24,7 @@
 
 	<section id="formulario">
 
-	<form action="classes/inserir-pessoaFisica.php" method="post">
+		<form action="classes/inserir-pessoaFisica.php" method="post">
 			<h1 class="titulo">Pessoa Física</h1>
 			<br><br>
 			<input type="text" class="input" name="cpf" placeholder="  CPF"><br>
@@ -41,7 +41,7 @@
 			<input type="text" class="input" name="celular" placeholder="  Celular"><br>
 			<input type="text" class="input" name="SSP_Sigla_UF" placeholder="  Sigla UF"><br><br>
 			<input type="submit" value="Salvar"><br>
-	
+
 
 	</section>
 

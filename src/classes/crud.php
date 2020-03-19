@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conexao-banco.php';
+/* require 'conexao-banco.php';
 
 
 class Crud 
@@ -21,7 +21,7 @@ class Crud
     public $SSP_Sigla_UF;
 
     public function inserirPF(){
-        $query = "SELECT * FROM sepebc.ssp;INSERT INTO sepebc.pessoafisica(`cpf`, `nome`,`rg`, `ssp`,`sexo`,`dataNascimento`,`e-mail`,`endereço`,`classificaçãoProfissional`,`SupervisorTecnico`,
+        $query = "INSERT INTO sepebc.pessoafisica(`cpf`, `nome`,`rg`, `ssp`,`sexo`,`dataNascimento`,`e-mail`,`endereço`,`classificaçãoProfissional`,`SupervisorTecnico`,
         `datadocadastro`,`celular`,`SSP_Sigla_UF`)
         VALUES
         ('" . $this->cpf . "'>,
@@ -38,7 +38,6 @@ class Crud
         <'" . $this->celular . "'>,
         <'" . $this->SSP_Sigla_UF . "'>)";
 
-        $conexao = Conexao::pegarConexao();
-        $conexao->exec($query);
-    }
+        
+    } 
 }
